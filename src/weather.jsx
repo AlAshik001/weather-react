@@ -24,6 +24,10 @@ function Weather()
             settemp(success.data.main.temp)
             setdesc(success.data.weather[0].description)
         })
+    .catch(function()
+    {
+     alert("City is not Found. Please enter valid city Name.") 
+    })
     }
 
     return(
